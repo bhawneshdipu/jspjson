@@ -44,9 +44,10 @@ SELECT * from matchtable;
 	dateArr.push("${row.date}");
 	score1Arr.push("${row.score1}");
 	score2Arr.push("${row.score2}");
-	t1nameArr.push("${row.t1name}");
-	t2nameArr.push("${row.t2name}");
-
+	tnameArr.push("${row.t1code}");
+	tnameArr.push("${row.t2code}");
+	score.push("${row.score1}");
+	score.push("${row.score2}");
 </script>
 <tr>
 
@@ -65,7 +66,10 @@ SELECT * from matchtable;
 </tr>
 </c:forEach>
 </table>
+
+<script type="text/javascript" src="axis.js"></script>
 <script type="text/javascript" src="bar.js"></script>
+
 <button type='button' onclick='one()'>click</button>
 </body>
 </html>
